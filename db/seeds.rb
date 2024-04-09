@@ -17,6 +17,5 @@ if User.count == 0
   procedure_str = AddName.procedure
   ActiveRecord::Base.connection.execute(procedure_str)
   str = AddName.query(3)
-  puts "query result"
-  puts ActiveRecord::Base.connection.execute(str)
+  ActiveRecord::Base.connection.execute(str)
 end
